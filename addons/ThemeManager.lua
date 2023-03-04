@@ -83,18 +83,6 @@ local ThemeManager = {} do
 		table.sort(ThemesArray, function(a, b) return self.BuiltInThemes[a][1] < self.BuiltInThemes[b][1] end)
 
 		groupbox:AddDivider()
-		groupbox:AddDropdown('ThemeManager_ThemeList', { Text = 'Theme list', Values = ThemesArray, Default = 1 })
-
-		groupbox:AddButton('Set as default', function()
-			self:SaveDefault(Options.ThemeManager_ThemeList.Value)
-			self.Library:Notify(string.format('Set default theme to %q', Options.ThemeManager_ThemeList.Value))
-		end)
-
-		Options.ThemeManager_ThemeList:OnChanged(function()
-			self:ApplyTheme(Options.ThemeManager_ThemeList.Value)
-		end)
-
-		groupbox:AddDivider()
 		groupbox:AddDropdown('ThemeManager_CustomThemeList', { Text = 'Custom themes', Values = self:ReloadCustomThemes(), AllowNull = true, Default = 1 })
 		groupbox:AddInput('ThemeManager_CustomThemeName', { Text = 'Custom theme name' })
 
