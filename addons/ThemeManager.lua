@@ -5,7 +5,7 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Horizon.lua']         = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"d28208","BackgroundColor":"141414","OutlineColor":"323232"}') },
+		['Horizon.lua']         = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"d18a08","BackgroundColor":"141414","OutlineColor":"323232"}') },
 		['Shhhh.lua']           = { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"00b3ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
 	}
 
