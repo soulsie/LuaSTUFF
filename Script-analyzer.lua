@@ -1,5 +1,5 @@
 --[[
-Basic httpspy with logger analyzer that can block malicious requests from a domain you provide in _G.BlockedDomains
+Basic httpspy with logger analyzer that can block malicious requests from a domain you provide in Global.BlockedDomains
 
 This was totally not made by me (SOULS) and i probably don't know who made this or else i would've gave them credits.
 ]]
