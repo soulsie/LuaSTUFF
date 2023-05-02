@@ -3,7 +3,7 @@ Yun Founders: flash#9999, loris#9547, worldwide#0001 , Saul Goodman#2345
 Yun Devs: zomb#7741, nives#0001, loot#1337
 --]]
 function initLibrary()
-    local folderName = "epic config folder"
+    local folderName = "Kaisencc"
 
 
     if not isfolder(folderName) then
