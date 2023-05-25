@@ -89,7 +89,7 @@ while task.wait() do --> (Toggle)
     end
 )
 end
-pcall(function() --> Detection: Enables the process when your knocked (Animations method, Name pos compared to char pos method)
+pcall(function() --> Detection: Enables the process when your knocked (Health, Name pos compared to char pos)
     for _, Player in pairs(game:GetService("Players"):GetPlayers()) do
         if Player:DistanceFromCharacter(FindPlayer.Character.UpperTorso.Position) <= 5 and Player.Name ~= FindPlayer.Name then --// this uses the player's name distance because when your knocked it changes
             Enabled = true
