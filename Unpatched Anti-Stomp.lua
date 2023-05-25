@@ -8,6 +8,8 @@ Credits: ASOULS#3009
 
 -- ass method. However, unpatched one
 
+-- ass method. However, unpatched one
+
 --// table for easier customizations
 getgenv().Settings = {
     ScriptSets = {    
@@ -75,7 +77,7 @@ end
 )
 
 while task.wait() do --> (Toggle)
-    coroutine.wrap(function(key)
+    game:GetService("UserInputService").InputBegan:Connect(function(key)
         if key.KeyCode == Settings.ForceKeybind then
             pcall(function()
                 local RootPart = RootPart
@@ -89,9 +91,9 @@ while task.wait() do --> (Toggle)
     end
 )
 end
-pcall(function() --> Detection: Enables the process when your knocked (Health, Name pos compared to char pos)
+pcall(function() --> Detection: Enables the process when your knocked (Animations method, Name pos compared to char pos method)
     for _, Player in pairs(game:GetService("Players"):GetPlayers()) do
-        if Player:DistanceFromCharacter(FindPlayer.Character.UpperTorso.Position) <= 5 and Player.Name ~= FindPlayer.Name then --// this uses the player's name pos because when your knocked it changes
+        if Player:DistanceFromCharacter(FindPlayer.Character.UpperTorso.Position) <= 5 and Player.Name ~= FindPlayer.Name then --// this uses the player's name distance because when your knocked it changes
             Enabled = true
         else
             Enabled = false
