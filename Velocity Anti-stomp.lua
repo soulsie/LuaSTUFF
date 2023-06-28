@@ -62,7 +62,7 @@ end
 
 while task.wait() do --> (Toggle)
     game:GetService("UserInputService").InputBegan:Connect(function(key)
-        if key.KeyCode == Settings.ForceKeybind then Toggled = true
+        if key.KeyCode == Settings.ForceKeybind then Toggled = not Toggled
             if Toggled == true then repeat -- so many checks ? ik 
                 pcall(function()
                 local CurrenVeloctiy = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
