@@ -1,21 +1,21 @@
--- Old project i was hired in
+-- Old project I was hired in
 
 --[[
 Notes:
 
-If you find various parts of the code that's ugly then yk that my code is shit so don't mention it
-I usually love to make alot of toggle checks but i broke that rule here (idk why) 
-If you find bugs then its usual because this script haven't been tested out since atleast 2-3 months
+If you find various parts of the code that are ugly then yk that my code is shit so don't mention it
+I usually love to make a lot of toggle checks but I broke that rule here (idk why) 
+If you find bugs then its usually because this script hasn't been tested out since atleast 2-3 months
 
 Current State:
 
 Status: Outdated
 Version: Unknown
-Speciality: True Desync that uses Anchored Humaniod with moving CFrame (Based on Player's move direction) to delay the serverside position which is hard to resolve using the default method
+Specialty: True Desync that uses Anchored Humaniod with moving CFrame (Based on the Player's move direction) to delay the serverside position which is hard to resolve using the default method
 
 Inaccuracies:
 1) It can be easily resolved if the target recalls his resolving method
-2) Its inaccurate when the player is standing still since it the CFrame is based on Player's move direction
+2) Its inaccurate when the player is standing still since the CFrame is based on the Player's move direction
 
 
 Credits: @loris1337(786836423176224768) for true desync @pyt3(1018385268413317240) for the rest of the script 
