@@ -95,7 +95,7 @@ end
 )
 
 local VelEnabled = Desync.VelocityDesync.Enabled
---// input service to check the keybind
+
 game:GetService("UserInputService").InputBegan:Connect(function(vkeybind, velprocessed)
     if vkeybind.KeyCode == Desync.Velocity.Keybind and velprocessed == false then
     VelEnabled = not VelEnabled
