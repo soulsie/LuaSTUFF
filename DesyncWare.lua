@@ -20,7 +20,7 @@ Inaccuracies:
 
 Credits: @loris1337(786836423176224768) for true desync @pyt3(1018385268413317240) for the rest of the script 
 ]]
--- im too lazy to make a better toggle check so yea this is indeedly not my force coding skills
+-- hello, please ignore my toggle checks. Thanks
 getgenv().Settings = {
     TrueDesync = {
         ["Enabled"] = (true),
