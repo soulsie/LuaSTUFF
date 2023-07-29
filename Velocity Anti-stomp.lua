@@ -1,4 +1,4 @@
--- ass method. However, unpatched one
+--// Made by @pyt3
 
 --// table for easier customizations
 getgenv().Settings = {
@@ -26,7 +26,7 @@ local Settings = getgenv().Settings.ScriptSets
 local TSets = getgenv().Settings.Text
 local Enabled = Settings.Enabled
 local Toggled = Settings.Toggled --> Force toggle var
---// text 
+--// text (not sure why i added it)
 local t = Drawing.new("Text")
 t.Text = "Enabled" or "Disabled" 
 t.Color = Color3.fromRGB(0, 255, 0) or Color3(255, 0, 0)
@@ -62,7 +62,7 @@ end
 
 while task.wait() do --> (Toggle)
     game:GetService("UserInputService").InputBegan:Connect(function(key)
-        if key.KeyCode == Settings.ForceKeybind then Toggled = not Toggled
+        if key.KeyCode == Settings.ForceKeybind then Toggled = true
             if Toggled == true then repeat -- so many checks ? ik 
                 pcall(function()
                 local CurrenVeloctiy = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
